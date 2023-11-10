@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+  <title>Rock, Paper, Scissors Game</title> 
+  <link rel="stylesheet" href="./styles.css" /> 
+</head>
+<body>
+    <div class="container">
+        <div class="container__inner">
+
+            <h1>Rock, Paper, Scissors</h1> 
+
+            <!-- Instructions for the game with emojis for choices -->
+            <p class="instructions">
+            Enter your choice (rock, paper, scissors):
+            </p>
+
+            <!-- Emojis that represent user choices -->
+            <div class="emojis">
+                <span id="rock" class="emoji">✊</span> <!-- Emoji for rock -->
+                <span id="paper" class="emoji">🖐️</span> <!-- Emoji for paper -->
+                <span id="scissors" class="emoji">✌️</span> <!-- Emoji for scissors -->
+            </div>
+
+            <!-- Form for user input -->
+            <form class="form" id="guessForm">
+                <input type="text" class="form__input" id="guess" /> <!-- Input field for user guesses -->
+                <button type="submit" class="button">Throw</button> <!-- Button to submit the user's choice -->
+            </form>
+
+            <!-- Element to display messages to the user -->
+            <div class="message" id="message" hidden></div>
+
+            <!-- Scoreboard displaying user and computer scores -->
+            <div class="score-board">
+                <div id="user-label" class="badge">user</div> <!-- User label -->
+                <span id="user-score">0</span> <!-- User score -->
+
+                <!-- Divider between scores -->
+                <span id="computer-score">0</span> <!-- Computer score -->
+                <div id="computer-label" class="badge">comp</div> <!-- Computer label -->
+            </div>
+
+            <!-- Container for showing the computer's choice -->
+            <div id="computer-choice" class="message" hidden></div>
+
+     
+
+    </div>
+  </div>
+
+  <script src="script.js"></script> <!-- Link to the external JavaScript file -->
+</body>
+</html>
